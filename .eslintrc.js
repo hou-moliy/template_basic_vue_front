@@ -1,15 +1,22 @@
 module.exports = {
   "env": {
     "browser": true,
-    "es2021": true
+    "node": true,
+    "commonjs": true,
+    "amd": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:vue/essential"
   ],
   "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    "ecmaVersion": 10,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true, // 不限制eslint对import使用位置
+    "ecmaFeatures": {
+      "modules": true,
+      "legacyDecorators": true
+    }
   },
   "plugins": [
     "vue"

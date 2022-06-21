@@ -1,12 +1,9 @@
 <template>
-  <component
-    :is="type"
-    v-bind="linkProps(to)"
-  >
+  <component :is="type"
+             v-bind="linkProps(to)">
     <slot />
   </component>
 </template>
-
 <script>
 import { isExternal } from '@/utils/validate';
 

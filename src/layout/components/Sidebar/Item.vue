@@ -12,20 +12,29 @@ export default {
       default: ''
     }
   },
-  render (h, context) {
+  render (createElement, context) {
     const { icon, title } = context.props;
     const vnodes = [];
-
     if (icon) {
-      if (icon.includes('el-icon')) {
-        vnodes.push(<i class={[icon, 'sub-el-icon']} />);
-      } else {
-        vnodes.push(<svg-icon icon-class={icon} />);
-      }
+      vnodes.push(
+        createElement('svg-icon', {
+          attrs: {
+            'icon-class': icon
+          }
+        })
+      );
     }
 
     if (title) {
-      vnodes.push(<span slot='title'>{(title)}</span>);
+      vnodes.push(
+        createElement(
+          'span',
+          {
+            slot: 'title'
+          },
+          title
+        )
+      );
     }
     return vnodes;
   }
