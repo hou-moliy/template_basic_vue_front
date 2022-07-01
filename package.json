@@ -62,6 +62,7 @@
   },
   "license": "MIT",
   "eslintConfig": {
+    "extends": "airbnb-base",
     "parser": "babel-eslint"
   }
 }

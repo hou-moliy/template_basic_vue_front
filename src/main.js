@@ -9,6 +9,7 @@ import store from './store';
 import router from './router';
 import '@/icons'; // icon
 import '@/permission'; // permission control
+import "@/icons/iconfont/iconfont.css";
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale });
