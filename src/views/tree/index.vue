@@ -3,7 +3,7 @@
     <el-input v-model="filterText"
               placeholder="Filter keyword"
               style="margin-bottom:30px;" />
-
+    <i class="iconfont icon-biaodanzujian-anniu"></i>
     <el-tree ref="tree2"
              :data="data2"
              :props="defaultProps"
