@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
+  "name": "name",
   "version": "1.0.0",
-  "description": "{{description}}",
-  "author": "{{author}}",
+  "description": "description",
+  "author": "author",
   "scripts": {
     "serve": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build --mode dev",

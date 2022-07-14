@@ -60,6 +60,12 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary"
+                   v-hasPermi.disabled="['editor']"
+                   @click="onSubmit">
+          Create（禁用）
+        </el-button>
+        <el-button type="primary"
+                   v-hasPermi="['editor']"
                    @click="onSubmit">
           Create
         </el-button>

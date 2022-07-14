@@ -10,7 +10,8 @@ import router from './router';
 import '@/icons'; // icon
 import '@/permission'; // permission control
 import "@/icons/iconfont/iconfont.css";
-
+import Directives from './directives';
+Vue.use(Directives);
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale });
 // 如果想要中文版 element-ui，按如下方式声明

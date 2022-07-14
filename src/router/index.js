@@ -57,19 +57,19 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/example/table',
     name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    meta: { title: 'Example', icon: 'el-icon-s-help', roles: ['editor'] },
     children: [
       {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        meta: { title: 'Table', icon: 'table', roles: ['editor'] }
       },
       {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        meta: { title: 'Tree', icon: 'tree', roles: ['editor'] }
       }
     ]
   },
@@ -172,6 +172,5 @@ export function resetRouter () {
   const newRouter = createRouter();
   router.matcher = newRouter.matcher; // reset router
 }
-console.log(router);
 
 export default router;

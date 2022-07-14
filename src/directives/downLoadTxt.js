@@ -1,6 +1,5 @@
 /**
 * 下载txt文件
-* Copyright (c) 2019 mms
 */
 export default {
   inserted (el, binding) {
