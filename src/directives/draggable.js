@@ -1,3 +1,9 @@
+/**
+* 普通元素的拖拽指令
+* 使用方式：
+*  1.设置需要拖拽的元素为相对定位，其父元素为绝对定位(父：relative，子：absolute)。
+*  2.子元素，<div v-draggable></div>
+*/
 export default {
   inserted: function (el) {
     el.style.cursor = 'move';

@@ -1,5 +1,5 @@
 /**
-* 操作权限处理
+* 操作权限指令
 * 使用方式：
 * 1. v-hasPermi.disabled="['editor']" ，只有editor角色才能操作，其余角色按钮置灰不可点击
 * 2.  v-hasPermi="['editor']"，只有editor角色才能操作，其余角色按钮不可见

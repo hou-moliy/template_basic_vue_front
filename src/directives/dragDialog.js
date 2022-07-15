@@ -1,6 +1,6 @@
 
 /**
-* dialog的拖拽处理
+* dialog的拖拽指令
 * 使用方式：
 *  <el-dialog title="dialog"
 *               :visible.sync="dialogVisible"
