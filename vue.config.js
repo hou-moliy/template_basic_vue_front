@@ -28,8 +28,8 @@ module.exports = {
     proxy: {
       // 公用代理-admin
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://10.1.63.202/test/api/adminLnK8s`, // k8s测试服务器
-        // target: `http://10.1.63.202:9503/admin`, // 测试服务器
+        // target: `http://10.1.63.202/test/api/adminLnK8s`, // k8s测试服务器
+        target: `http://10.4.5.252:9503/admin`, // 测试服务器
         changeOrigin: true,
         pathRewrite: {
           ["^" + process.env.VUE_APP_BASE_API]: ""

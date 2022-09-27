@@ -49,7 +49,7 @@ module.exports = {
     "no-use-before-define": [1, "nofunc"], // 未定义前不能使用
     "complexity": [1, 20], // 循环复杂度
     "no-unused-vars": 1, // 不能有声明后未被使用的变量或参数
-    "comma-dangle": [2, "never"], // 对象字面量项尾不能有逗号
+    // "comma-dangle": [2, "never"], // 对象字面量项尾不能有逗号
     "no-constant-condition": 2, // 禁止在条件中使用常量表达式 if(true) if(1)
     "no-dupe-args": 2, // 函数参数不能重复
     "no-dupe-keys": 2, // 在创建对象字面量时不允许键重复 {a:1,a:1}
@@ -81,7 +81,7 @@ module.exports = {
     "no-loop-func": 2, // 禁止在循环中使用函数（如果没有引用外部变量不形成闭包就可以）
     "no-new-func": 2, // 禁止使用new Function
     "no-self-compare": 2, // 不能比较自身
-    "no-sequences": 2, // 禁止使用逗号运算符
+    // "no-sequences": 2, // 禁止使用逗号运算符
     "no-throw-literal": 2, // 禁止抛出字面量错误 throw "error";
     "no-return-assign": [2, "always"], // return 语句中不能有赋值表达式
     "no-redeclare": [2, { // 禁止重复声明变量

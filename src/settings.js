@@ -1,15 +1,31 @@
 module.exports = {
-
   title: '管理平台',
+
   /**
-   * @type {boolean} true | false
-   * @description Whether fix the header
+   * 是否系统布局配置
+   */
+  showSettings: false,
+
+  /**
+   * 是否显示 tagsView
+   */
+  tagsView: true,
+
+  /**
+   * 是否固定头部
    */
   fixedHeader: false,
 
   /**
-   * @type {boolean} true | false
-   * @description Whether show the logo in sidebar
+   * 是否显示logo
    */
-  sidebarLogo: true
+  sidebarLogo: true,
+
+  /**
+   * @type {string | array} 'production' | ['production', 'development']
+   * @description Need show err logs component.
+   * The default is only used in the production env
+   * If you want to also use it in dev, you can pass ['production', 'development']
+   */
+  errorLog: 'production'
 };
